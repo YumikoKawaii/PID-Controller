@@ -49,7 +49,7 @@ void loop()
   float deriE = (e - prevE)/deltaT;
   
   // Integral Error
-  float inteE = inteE + e*deltaT;
+  inteE = inteE + e*deltaT;
   
   // Speed 
   float u = kP*e + kI*inteE + kD*deriE;
